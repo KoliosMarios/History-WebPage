@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="button" id="todays_events" value="Today's Events" onclick="getTodaysEvents()">
-    <input type="button" id="todays_births" value="Today's Births" onclick="getTodaysBirths()">
-    <input type="button" id="todays_deaths" value="Today's Deaths" onclick="getTodaysDeaths()">
-    <form action="#" id="form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Day In History</title>
+    <link rel="stylesheet" href="./profile.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div id="page_title">This Day In History</div>
+    </div>
+    <div class="user">
+      <div id="user_name">Marios Kolios</div>
+      <input type="button" id="disconnect" value="Sign Out" />
+    </div>
+    <div class="main">
+      <input
+        type="button"
+        id="todays_events"
+        value="Today's Events"
+        onclick="getTodaysEvents()"
+      />
+      <input
+        type="button"
+        id="todays_births"
+        value="Today's Births"
+        onclick="getTodaysBirths()"
+      />
+      <input
+        type="button"
+        id="todays_deaths"
+        value="Today's Deaths"
+        onclick="getTodaysDeaths()"
+      />
+      <form action="#" id="form">
         <label for="day">Select a day:</label>
-        <input type="number" id="day" name="day" min="1" max="31" ><br>
+        <input type="number" id="day" name="day" min="1" max="31" /><br />
         <label for="month">Select a month:</label>
-        <input type="number" id="month" name="month" min="1" max="12"><br>
+        <input type="number" id="month" name="month" min="1" max="12" /><br />
         <label for="topic">Select a topic:</label>
         <select name="topic" id="topic">
-            <option value="Events">Events</option>
-            <option value="Births">Births</option>
-            <option value="Deaths">Deaths</option>
-        </select><br>
-        <input type="submit" id="submit">
-    </form>
-    <ul id="presentation"></ul>
+          <option value="Events">Events</option>
+          <option value="Births">Births</option>
+          <option value="Deaths">Deaths</option></select
+        ><br />
+        <input type="submit" id="submit" />
+      </form>
+      <ul id="presentation"></ul>
+    </div>
+
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
