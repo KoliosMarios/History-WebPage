@@ -21,7 +21,7 @@ body {
   font-weight: 700;
 }
 
-.login_container {
+.signup_container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,18 +31,18 @@ body {
   font-size: 20px;
 }
 
-#login_form {
+#signup_form {
   border: 5px solid blue;
   border-radius: 20px;
   padding: 80px;
   position: absolute;
-  top: 100px;
+  top: 30px;
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
 }
 
-#submit_login {
+#submit_signup {
     padding: 5px;
     border-radius: 10px;
     font-size: 20px;

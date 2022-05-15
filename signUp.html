@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./signUp.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div id="page_title">This Day In History</div>
+    </div>
+    <div class="signup_container">
+      <form action="#" id="signup_form">
+        <label for="signup_user_first_name">User First Name:</label>
+        <input type="text" id="signup_user_first_name" name="signup_user_first_name" /><br />
+        <label for="signup_user_last_name">User Last name:</label>
+        <input type="text" id="signup_user_last_name" name="signup_user_last_name" /><br />
+        <label for="signup_email">Email:</label>
+        <input type="text" id="signup_email" name="signup_email" /><br />
+        <label for="signup_password">Password:</label>
+        <input type="password" id="signup_password" name="signup_password" /><br />
+        <input type="button" id="submit_signup" value="Submit" onclick="signup()" /><br>
+        <input type="button" id="goToLogIn" value="Already have an account?" onclick="movetoLogin()">
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
